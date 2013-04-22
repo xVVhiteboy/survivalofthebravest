@@ -358,7 +358,20 @@ def checkYourPrivilege(comment,body):
 			return(random.choice(privilegeResp),comment)
 	return None
 
-
+# A rule for people stuck in 2008
+#This rule brought to you by /u/xvvhiteboy
+def badComments(comment,body):
+	lower = body.lower()
+	if "cool story bro" in lower or "calm down" in lower or "troll" in lower or "asshole" in lower:
+			badcommentReplys = [
+					"[WORLD BUTTHURPED CHAMPION](http://i.imgur.com/O0v2dNQ.png)",
+					"[COLONRAMPAGE'D](http://i.imgur.com/VA6UEZu.jpg)",
+					"[BUTTDEVESTATED](http://i.imgur.com/oBbwnHY.jpg)",
+					"[master trole 2013](http://i.imgur.com/4O2QrcW.jpg)",
+					"[i was only pretending](http://i.imgur.com/aaODnol.jpg)",
+			]
+			return(random.choice(badcommentReplys),comment)
+	return None
 
 #### SECTION 2: RULES TO APPLY TO SUBMISSIONS
 
